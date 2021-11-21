@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    /* Remove html margin */
+    /* background-color: #EAEAEA; */
+    background-color: #F0E9D2;
+    /* background-color: #EEEEEE; */
+}
+
+/* DISABLE USER DRAG */
+img{
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* HEADER SECTION */
+
+#header-section{
+    background-color: #142F43;
+    /* margin: 0 auto;
+    width: 100%; */
+}
+
+.title-picture img{
+    width: 100%;
+    /* object-fit: cover; */
+
+}
+
+
+.title-section{
+    overflow: visible;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.title{
+    width: 45%; float: left; 
+    /* 使用Float讓兩個div在同一排 */
+    position: relative;
+    top: -100px;
+    margin-left: 15px;;
+
+}
+
+
+.slogan{
+    /* margin-left: 40%; */
+    /* 使用Float讓兩個div在同一排 */
+    position: relative;
+    top: -46px;
+    font-size: 2em;
+    color: white;
+}
+
+/* HEADER SECTION */
+
+/* TITLE SECTION */
+
+#content-section{
+    margin: 70px auto;
+    width: 60%;
+}
+
+.columns{
+    display: grid;
+    grid-auto-flow: row;
+
+    gap: 1em;
+}
+
+.left-pane{
+    text-align: justify;
+
+}
+
+.right-pane{
+    text-align: justify;
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+.columns{
+    grid-template-columns: 60% 40%;
+
+}
+}
