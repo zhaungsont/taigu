@@ -20,49 +20,49 @@ img{
 
 #header-section{
     background-color: #142F43;
-    /* margin: 0 auto;
-    width: 100%; */
+
 }
 
 .title-picture img{
     width: 100%;
-    /* object-fit: cover; */
-
 }
 
 
-.title-section{
-    overflow: visible;
+.title-flexbox{
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
-    width: 50%;
 }
 
 .title{
-    width: 45%; float: left; 
-    /* 使用Float讓兩個div在同一排 */
-    position: relative;
-    top: -100px;
-    margin-left: 15px;;
+    width: 40%;
+    /* position: relative;
+    top: -40px;  */
 
 }
 
 
 .slogan{
-    /* margin-left: 40%; */
-    /* 使用Float讓兩個div在同一排 */
-    position: relative;
-    top: -46px;
-    font-size: 2em;
+
+    /* position: relative;
+    top: -40px;  */
     color: white;
+
 }
 
 /* HEADER SECTION */
 
-/* TITLE SECTION */
+/* CONTENT SECTION */
 
 #content-section{
-    margin: 70px auto;
-    width: 60%;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .columns{
@@ -91,4 +91,46 @@ img{
     grid-template-columns: 60% 40%;
 
 }
+
+#content-section{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.title-flexbox{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+}
+
+.title-image{
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+.title-image > img{
+    width: 50%;
+}
+
+.title{
+    /* position: relative;
+    top: -100px; */
+    margin: 0;
+
+}
+
+.slogan{
+    /* position: relative;
+    top: 20px; */
+    font-size: 2em;
+    margin: 0;
+}
+
+
+
+
 }
