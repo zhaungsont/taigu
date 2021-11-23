@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /* Remove html margin */
+    /* ☝️ Remove html margin */
     /* background-color: #EAEAEA; */
     background-color: #F0E9D2;
     /* background-color: #EEEEEE; */
@@ -16,79 +16,77 @@ img{
     -ms-user-select: none;
 }
 
-/* HEADER SECTION */
-
 #header-section{
     background-color: #142F43;
+    padding-bottom: 1em;
 
+}
+.title-picture{
+    position: relative;
 }
 
 .title-picture img{
     width: 100%;
-}
-
-
-.title-flexbox{
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.title{
-    width: 40%;
-    /* position: relative;
-    top: -40px;  */
+    position: relative;
 
 }
 
+.logo{
+    /* Logo width is specified in @media */
+}
 
 .slogan{
-
-    /* position: relative;
-    top: -40px;  */
     color: white;
+}
+
+
+/*  ---------------- DESKTOP ---------------- */
+
+
+
+@media screen and (min-width: 1024px) {
+
+/* -------- HEADER SECTION -------- */
+
+.title-picture img.logo, .slogan{ /* 太古齋LOGO & 字畫妝裱position */
+    position: absolute;
+    /* border: 1px green solid; */
+}
+
+.title-picture img.logo{
+width: 25%;
+left: 25%;
+bottom: 0;
 
 }
 
-/* HEADER SECTION */
+.slogan{
+    font-size: 2em;
+    margin: 0;
+    left: 50%;
+    bottom: 0;
+}
 
-/* CONTENT SECTION */
+/* -------- HEADER SECTION -------- */
+/* -------- CONTENT SECTION -------- */
 
 #content-section{
     margin: 0 auto;
     width: 90%;
 }
 
-.columns{
-    display: grid;
-    grid-auto-flow: row;
-
-    gap: 1em;
-}
-
 .left-pane{
     text-align: justify;
-
 }
 
 .right-pane{
     text-align: justify;
-
-
 }
 
-
-
-@media screen and (min-width: 1024px) {
-
 .columns{
+    display: grid;
     grid-template-columns: 60% 40%;
+    gap: 1em;
 
 }
 
@@ -97,39 +95,47 @@ img{
     width: 60%;
 }
 
-.title-flexbox{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+
+
+/* -------- CONTENT SECTION -------- */
+
 
 }
 
-.title-image{
-    display: flex;
-    align-items: center;
-    width: 50%;
+/*  ---------------- MOBILE ---------------- */
+@media screen and (max-width: 1023px) {
 
-}
+    /* -------- HEADER SECTION -------- */
 
-.title-image > img{
-    width: 50%;
-}
+    .columns{
+        display: grid;
+        grid-auto-flow: row;
+    
+        
+    }
 
-.title{
-    /* position: relative;
-    top: -100px; */
-    margin: 0;
+    .title-picture img.logo{
+        width: 30%;
+        margin: 0.5em auto 0 auto;
+        display: block;
+    
+    }
 
-}
+    .slogan{
+        text-align: center;
+        font-size: 1.3em;
+        margin: 0 auto;
+    }
 
-.slogan{
-    /* position: relative;
-    top: 20px; */
-    font-size: 2em;
-    margin: 0;
-}
 
+
+
+    /* -------- HEADER SECTION -------- */
+    /* -------- CONTENT SECTION -------- */
+
+    .columns{
+        margin: 1em;
+    }
 
 
 
