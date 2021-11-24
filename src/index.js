@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./components/App"
+import App from "./components/App";
+require('dotenv').config();
+
+const google = window.google;
 
 ReactDOM.render(
   <App />,

@@ -1,9 +1,10 @@
-body {
+html, body {
     margin: 0;
     /* ☝️ Remove html margin */
     /* background-color: #EAEAEA; */
     background-color: #F0E9D2;
     /* background-color: #EEEEEE; */
+    overflow-x: hidden; 
 }
 
 /* DISABLE USER DRAG */
@@ -39,6 +40,18 @@ img{
     color: white;
 }
 
+.more-info{
+    text-align: center;
+    color: white;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+/* #map {
+    height: 100%;
+  } */
+
 
 /*  ---------------- DESKTOP ---------------- */
 
@@ -50,6 +63,7 @@ img{
 
 .title-picture img.logo, .slogan{ /* 太古齋LOGO & 字畫妝裱position */
     position: absolute;
+    width: 100%;
     /* border: 1px green solid; */
 }
 
@@ -126,6 +140,8 @@ bottom: 0;
         font-size: 1.3em;
         margin: 0 auto;
     }
+
+
 
 
 
