@@ -1,6 +1,7 @@
 import React from 'react'
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 import Spinner from "./Spinner";
+import { buildQueries } from '@testing-library/react';
 
 const google = window.google;
 
@@ -14,6 +15,10 @@ const containerStyle = {
 const position = { 
   lat: 25.032967511963054,
   lng: 121.54533338885759
+}
+
+const infoWindowStyle = {
+
 }
 
 function Map() {
@@ -30,6 +35,16 @@ function Map() {
         <Marker
         position={position}
         />
+        <InfoWindow
+        position={position}
+        >
+        <div style={infoWindowStyle}>
+          <h3>太古齋</h3>
+          <a href="https://goo.gl/maps/vkNBMjAm7jaSzB8m7">
+          <p>台北市大安區<br />信義路四段58-2號</p>
+          </a>
+        </div>
+    </InfoWindow>
         <></>
       </GoogleMap>
     </LoadScript>
