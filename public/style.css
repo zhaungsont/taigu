@@ -61,8 +61,63 @@ a{
 
 a:hover{
     color: #6166B3;
-    text-decoration: underline;
-  }
+    /* text-decoration: underline; */
+}
+
+.div-name{
+    background-color: #142F43;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.div-name img{
+    width: 1em;
+    filter: invert(1);
+}
+
+.contact{
+    
+    font-weight: bold;
+    background-color: #FEFBF3;
+    border-radius: 0 0 10px 10px;
+    padding: 1em;
+    font-size: 1.2em;
+
+}
+
+.left-pane {
+    margin-top: 1.4em;
+}
+
+.left-pane img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-pane{
+    
+}
+
+.store-info{
+    font-weight: bolder;
+    background-color: #FEFBF3;
+    border-radius: 0 0 10px 10px;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+}
+
+.t1{
+    width: 35%;
+}
 
 /*  ---------------- DESKTOP ---------------- */
 
@@ -104,6 +159,8 @@ bottom: 0;
     text-align: justify;
 }
 
+
+
 .right-pane{
     text-align: justify;
 }
@@ -120,37 +177,27 @@ bottom: 0;
     width: 75%;
 }
 
-.contact{
-    
-    font-weight: bold;
-    background-color: #FEFBF3;
-    border-radius: 0 0 5px 5px;
-    /* padding-left: 0.5em;
-    padding-right: 0.5em; */
-    padding: 1em;
-    /* margin-top: 1em; */
+
 
 }
-
-.div-name{
-    margin-top: 1em;
-    background-color: #142F43;
-    color: white;
-    padding: 0.1em 1em 0.1em 1em;
-    border-radius: 10px 10px 0 0;
-}
-
-.div-name img{
-    width: 1em;
-    filter: invert(1);
-}
-
 
 
 /* -------- CONTENT SECTION -------- */
 
+/*  ---------------- BIGGG DESKTOP ---------------- */
+@media screen and (min-width: 1650px) {
+.columns{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 3em;
+    justify-content: center;
+}
+
 
 }
+
+
+/*  ---------------- BIGGG DESKTOP ---------------- */
 
 /*  ---------------- MOBILE ---------------- */
 @media screen and (max-width: 1023px) {

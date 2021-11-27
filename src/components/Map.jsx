@@ -6,7 +6,6 @@ import { buildQueries } from '@testing-library/react';
 const google = window.google;
 
 const containerStyle = {
-  marginTop: "1em",
   width: '100%',
   height: '50vh'
 };
