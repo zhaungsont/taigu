@@ -4,6 +4,8 @@ html, body {
     /* background-color: #EAEAEA; */
     /* background-color: #F0E9D2; */
     /* background-color: #EEEEEE; */
+    /* background-color: #F0E9D2; */
+    background-color: #FEFBF3;
     overflow-x: hidden; 
 }
 
@@ -19,7 +21,8 @@ img{
 
 #header-section{
     background-color: #142F43;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
 
 }
 .title-picture{
@@ -82,7 +85,9 @@ a:hover{
 .contact{
     
     font-weight: bold;
-    background-color: #FEFBF3;
+    /* background-color: #FEFBF3; */
+
+    background-color: #FFF5DE;
     border-radius: 0 0 10px 10px;
     padding: 1em;
     font-size: 1.2em;
@@ -104,7 +109,8 @@ a:hover{
 
 .store-info{
     font-weight: bolder;
-    background-color: #FEFBF3;
+    background-color: #FFF5DE;
+    /* background-color: #F0E9D2; */
     border-radius: 0 0 10px 10px;
     padding: 0.5em;
     font-size: 1.2em;

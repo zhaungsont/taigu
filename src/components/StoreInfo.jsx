@@ -5,6 +5,7 @@ function StoreInfo(){
         <div className="store-info">
 
     <table>
+    <tbody>
         <tr>
             <td className="t1">營業時間：</td>
             <td>每日 9:30 ~ 18:00</td>
@@ -13,6 +14,7 @@ function StoreInfo(){
             <td className="t1">公休日：</td>
             <td>國定假日與禮拜日</td>
         </tr>
+    </tbody>
     </table>
             <p>
                 週六採電話預約制。

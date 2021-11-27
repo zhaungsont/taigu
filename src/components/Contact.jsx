@@ -8,7 +8,8 @@ function Contact(){
                     地址：<a href="https://goo.gl/maps/vkNBMjAm7jaSzB8m7">台北市大安區信義路四段58-2號</a> <br />
                     電郵：<a href="mailto:taigu168@gmail.com">taigu168@gmail.com</a>
                     </p> */}
-                    <table>
+    <table>
+        <tbody>
         <tr>
             <td className="t1">電話：</td>
             <td><a href="tel: 02-2702-3371">(02) 2702-3371</a></td>
@@ -21,6 +22,7 @@ function Contact(){
             <td className="t1">電子郵件：</td>
             <td><a href="mailto:taigu168@gmail.com">taigu168@gmail.com</a></td>
         </tr>
+        </tbody>
     </table>
         </div>
     )
