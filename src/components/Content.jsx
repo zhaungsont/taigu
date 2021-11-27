@@ -5,28 +5,21 @@ import DivName from "./DivName";
 import StoreInfo from "./StoreInfo";
 import TitleContent from "./TitleContent";
 
-const sp = " ";
-
 function Content(){
     return(
         <div id="content-section">
 
+
         <div className="columns">
 
-            <div className="left-pane">
-            <a href="https://goo.gl/maps/vkNBMjAm7jaSzB8m7"><i class="fas fa-map-marker-alt"></i></a> {sp}
-            <a href="https://www.facebook.com/taigu168/"><i class="fab fa-facebook"></i></a> {sp}
-            <a href="https://github.com/zhaungsont"><i class="fab fa-github"></i></a>
-
-            <hr />
-
+        <div className="left-pane">            
             <TitleContent />
 
             
             </div>
 
             <div className="right-pane">
-
+                <div className="desktop-spacer"></div>
 
                 <DivName name="聯絡資訊" src="images/phone.png" />
                 <Contact />

@@ -22,7 +22,7 @@ img{
 #header-section{
     background-color: #142F43;
     padding-bottom: 1.5em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 
 }
 .title-picture{
@@ -95,7 +95,7 @@ a:hover{
 }
 
 .left-pane {
-    margin-top: 1.4em;
+    /* margin-top: 1.4em; */
 }
 
 .left-pane img{
@@ -124,6 +124,16 @@ table{
 .t1{
     width: 35%;
 }
+
+.title-links{
+    width: 77%;
+    margin: 0 auto;
+}
+
+
+hr{
+}
+
 
 /*  ---------------- DESKTOP ---------------- */
 
@@ -155,10 +165,8 @@ bottom: 0;
 
 /* -------- HEADER SECTION -------- */
 /* -------- CONTENT SECTION -------- */
-
-#content-section{
-    margin: 0 auto;
-    width: 90%;
+.desktop-spacer{
+    /* padding: 1em; */
 }
 
 .left-pane{
