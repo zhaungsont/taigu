@@ -2,6 +2,7 @@ import React from "react";
 import Map from "./Map";
 
 
+
 function Content(){
     return(
         <div id="content-section">
@@ -16,6 +17,7 @@ function Content(){
             </div>
 
             <div className="right-pane">
+                {/* <Map /> */}
                 <Map />
                 <p>RIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 In venenatis leo sit amet turpis porttitor, nec rhoncus arcu vulputate. 
