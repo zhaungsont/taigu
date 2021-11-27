@@ -128,10 +128,12 @@ table{
 .title-links{
     width: 77%;
     margin: 0 auto;
+    
 }
 
+.title-links p{
+    display: inline;
 
-hr{
 }
 
 
@@ -245,6 +247,12 @@ bottom: 0;
 
     /* -------- HEADER SECTION -------- */
     /* -------- CONTENT SECTION -------- */
+
+    .title-links{
+        width: 92%;
+        margin: 0 auto;
+        
+    }
 
     .columns{
         margin: 1em;
