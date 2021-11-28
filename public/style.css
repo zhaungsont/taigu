@@ -137,6 +137,7 @@ table{
 }
 
 
+
 /*  ---------------- DESKTOP ---------------- */
 
 
@@ -200,20 +201,39 @@ bottom: 0;
 
 /* -------- CONTENT SECTION -------- */
 
-/*  ---------------- BIGGG DESKTOP ---------------- */
+/*  ---------------- BIG DESKTOP ---------------- */
 @media screen and (min-width: 1650px) {
 .columns{
     display: grid;
     grid-template-columns: 70% 30%;
-    gap: 3em;
+    gap:5em;
     justify-content: center;
 }
 
 
+
 }
 
 
-/*  ---------------- BIGGG DESKTOP ---------------- */
+/*  ---------------- BIG DESKTOP ---------------- */
+
+/*  ---------------- MEGA DESKTOP ---------------- */
+@media screen and (min-width: 2150px) {
+    .columns{
+        display: grid;
+        grid-template-columns: 70% 20%;
+        gap: 15em;
+        justify-content: center;
+    }
+    .t1{
+        width: 40%;
+    }
+    
+    
+    }
+    
+    
+    /*  ---------------- MEGA DESKTOP ---------------- */
 
 /*  ---------------- MOBILE ---------------- */
 @media screen and (max-width: 1023px) {

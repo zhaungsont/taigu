@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import DivName from "./DivName";
 import StoreInfo from "./StoreInfo";
 import TitleContent from "./TitleContent";
+import CarouselGallery from "./CarouselGallery";
 
 function Content(){
     return(
@@ -15,7 +16,6 @@ function Content(){
         <div className="left-pane">            
             <TitleContent />
 
-            
             </div>
 
             <div className="right-pane">
