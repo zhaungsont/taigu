@@ -1,17 +1,20 @@
-import React from "react";
+import { React, useState } from "react";
 import Header from "./Header";
 import Content from "./Content";
-import Attributes from "./Attributes";
 import TitleLinks from "./TitleLinks";
+import Sticker from "./Sticker";
+import Footer from "./Footer";
 
 
 function App(){
+
     return(
         <div>
             <Header />
             <TitleLinks />
             <Content />
-            <Attributes />
+            {/* <Sticker /> */}
+            <Footer />
         </div>
     );
 }

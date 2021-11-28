@@ -5,7 +5,7 @@ const sp = " ";
 function DivName(props){
     return (
         <div className="div-name">
-            <img src={props.src} alt="照片無法正常顯示" /> 
+            <img className={props.class} src={props.src} alt="照片無法正常顯示" /> 
             {sp} {props.name}
         </div>
     )

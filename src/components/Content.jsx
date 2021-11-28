@@ -4,7 +4,10 @@ import Contact from "./Contact";
 import DivName from "./DivName";
 import StoreInfo from "./StoreInfo";
 import TitleContent from "./TitleContent";
-import CarouselGallery from "./CarouselGallery";
+import SecondContent from "./SecondContent";
+import Sakana from "./Sakana";
+import Attributes from "./Attributes";
+
 
 function Content(){
     return(
@@ -13,8 +16,10 @@ function Content(){
 
         <div className="columns">
 
-        <div className="left-pane">            
-            <TitleContent />
+            <div className="left-pane">            
+                <TitleContent />
+
+                <SecondContent />
 
             </div>
 
@@ -30,11 +35,11 @@ function Content(){
                 <DivName name="Google 地圖" src="images/map.png" />
                 <Map />
 
+                <DivName name="網站作者" src="images/teenager.png" />
+                <Sakana />
 
-                <p>RIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                In venenatis leo sit amet turpis porttitor, nec rhoncus arcu vulputate. 
-                Quisque fringilla consequat eros eget tempor. Mauris fermentum, risus ac iaculis vestibulum, magna justo sagittis elit, quis consequat quam neque eu urna. Proin hendrerit in dui ornare finibus. Etiam posuere mollis risus. Vivamus dignissim hendrerit metus ac interdum. Curabitur sed orci magna. Quisque ac purus suscipit, ullamcorper orci at, commodo elit.
-                </p>
+                {/* <DivName name="致謝" src="images/copyright.png" />
+                <Attributes /> */}
             </div>
         </div>
 

@@ -7,11 +7,11 @@ function StoreInfo(){
     <table>
     <tbody>
         <tr>
-            <td className="t1">營業時間：</td>
+            <td className="t1">營業時間</td>
             <td>每日 9:30 ~ 18:00</td>
         </tr>
         <tr>
-            <td className="t1">公休日：</td>
+            <td className="t1">公休日</td>
             <td>國定假日與禮拜日</td>
         </tr>
     </tbody>

@@ -78,13 +78,25 @@ a:hover{
     border-radius: 10px 10px 0 0;
     font-size: 1.4em;
     font-weight: 700;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .div-name img{
     width: 1em;
     filter: invert(1);
 }
+
+
+.sakana{
+    font-weight: bold;
+    /* background-color: #FEFBF3; */
+
+    background-color: #FFF5DE;
+    border-radius: 0 0 10px 10px;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
 
 .contact{
     
@@ -120,6 +132,16 @@ a:hover{
     font-size: 1.2em;
 }
 
+.attributes{
+    font-weight: 600;
+    background-color: #FFF5DE;
+    /* background-color: #F0E9D2; */
+    border-radius: 0 0 10px 10px;
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
 table{
     width: 100%;
     text-align: left;
@@ -140,6 +162,36 @@ table{
 
 }
 
+.sticker{
+    position: fixed;
+    top: 10em;
+    right: 0;
+
+    background-color: #B4C6A6;
+    border-radius: 10px 0 0 10px;
+    padding: 0.8em;
+}
+
+.gradient{
+    margin-top: 5em;
+    padding: 1em;
+    background: rgb(20,47,67);
+    background: linear-gradient(0deg, rgba(20,47,67,1) 15%, rgba(254,251,243,1) 85%);
+}
+
+.footer{
+    margin-top: 10em;
+    background-color: #142F43;
+    text-align: center;
+    color: #D0CAB2;
+    padding: 2em;
+    font-size: 0.5em;
+
+}
+
+.footer a{
+    color: #87AAAA;
+}
 
 
 /*  ---------------- DESKTOP ---------------- */
@@ -294,5 +346,6 @@ bottom: 0;
     .left-pane, .right-pane{
         text-align: justify;
     }
+
 
 }
