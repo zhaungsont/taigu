@@ -7,7 +7,10 @@ html, body {
     /* background-color: #F0E9D2; */
     background-color: #FEFBF3;
     overflow-x: hidden; 
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 500;
 }
+
 
 /* DISABLE USER DRAG */
 img{
@@ -41,6 +44,7 @@ img{
 
 .slogan{
     color: white;
+    font-weight: 900;
 }
 
 .more-info{
@@ -73,7 +77,7 @@ a:hover{
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 10px 10px 0 0;
     font-size: 1.4em;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 1em;
 }
 
@@ -108,7 +112,7 @@ a:hover{
 }
 
 .store-info{
-    font-weight: bolder;
+    font-weight: 600;
     background-color: #FFF5DE;
     /* background-color: #F0E9D2; */
     border-radius: 0 0 10px 10px;
@@ -209,7 +213,9 @@ bottom: 0;
     gap:5em;
     justify-content: center;
 }
-
+.slogan{
+    font-size: 3em;
+}
 
 
 }
@@ -228,7 +234,9 @@ bottom: 0;
     .t1{
         width: 40%;
     }
-    
+    .slogan{
+        font-size: 3.5em;
+    }
     
     }
     
@@ -241,6 +249,7 @@ bottom: 0;
     /* -------- HEADER SECTION -------- */
     #header-section{
         margin-bottom: 1em;
+        padding-bottom: 1em;
     }
 
 
