@@ -33,7 +33,9 @@ function Content(){
                 <StoreInfo />
 
                 <DivName name="Google 地圖" src="images/map.png" />
+                <div className="map-border">
                 <Map />
+                </div>
 
                 <DivName name="網站作者" src="images/teenager.png" />
                 <Sakana />

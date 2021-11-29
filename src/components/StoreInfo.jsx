@@ -2,7 +2,7 @@ import React from "react";
 
 function StoreInfo(){
     return(
-        <div className="store-info">
+        <div className="store-info sidepane">
 
     <table>
     <tbody>

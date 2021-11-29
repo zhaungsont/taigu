@@ -2,7 +2,7 @@ import React from "react";
 
 function Sakana(){
     return(
-        <div className="sakana">
+        <div className="sakana sidepane">
             <table>
             <tbody>
                 <tr>
