@@ -8,15 +8,69 @@ import Footer from "./Footer";
 
 function App(){
 
-    return(
+    var [website, websiteSetter] = useState(
         <div>
-            <Header />
+            <button  onClick={func1}>1</button>
+            <button  onClick={func2}>2</button>
+            <button  onClick={reset}>Reset</button>
+
+
+            <Header/>
             <TitleLinks />
             <Content />
             {/* <Sticker /> */}
             <Footer />
         </div>
     );
+
+    function func1(){
+        websiteSetter(<div>
+            <button  onClick={func1}>1</button>
+            <button  onClick={func2}>2</button>
+            <button  onClick={reset}>Reset</button>
+
+                <Footer />
+                <TitleLinks />
+                <Header/>
+
+            </div>)
+    }
+    function func2(){
+        websiteSetter(<div>
+            <button  onClick={func1}>1</button>
+            <button  onClick={func2}>2</button>
+            <button  onClick={reset}>Reset</button>
+
+            <Content />
+
+            </div>)
+    }
+
+    function reset(){
+        websiteSetter(
+            <div>
+            <button  onClick={func1}>1</button>
+            <button  onClick={func2}>2</button>
+            <button  onClick={reset}>Reset</button>
+
+
+            <Header/>
+            <TitleLinks />
+            <Content />
+            {/* <Sticker /> */}
+            <Footer />
+            </div>
+        )
+    }
+
+
+    return(
+        <div>
+        {website}
+        </div>
+    );
+
+    
 }
 
 export default App;
