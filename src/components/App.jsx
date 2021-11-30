@@ -7,68 +7,39 @@ import Footer from "./Footer";
 
 
 function App(){
+    var [lang, setLang] = useState(1)
 
-    var [website, websiteSetter] = useState(
-        <div>
-            <button  onClick={func1}>1</button>
-            <button  onClick={func2}>2</button>
-            <button  onClick={reset}>Reset</button>
-
-
-            <Header/>
-            <TitleLinks />
-            <Content />
-            {/* <Sticker /> */}
-            <Footer />
-        </div>
-    );
-
-    function func1(){
-        websiteSetter(<div>
-            <button  onClick={func1}>1</button>
-            <button  onClick={func2}>2</button>
-            <button  onClick={reset}>Reset</button>
-
-                <Footer />
-                <TitleLinks />
-                <Header/>
-
-            </div>)
-    }
-    function func2(){
-        websiteSetter(<div>
-            <button  onClick={func1}>1</button>
-            <button  onClick={func2}>2</button>
-            <button  onClick={reset}>Reset</button>
-
-            <Content />
-
-            </div>)
+    function changeLang() {
+        setLang(!lang);
     }
 
-    function reset(){
-        websiteSetter(
+    return(<div>
+        {lang ?
             <div>
-            <button  onClick={func1}>1</button>
-            <button  onClick={func2}>2</button>
-            <button  onClick={reset}>Reset</button>
-
-
-            <Header/>
-            <TitleLinks />
-            <Content />
-            {/* <Sticker /> */}
-            <Footer />
+                <Header/>
+                <TitleLinks />
+                <Content />
+                <a onClick={changeLang}>
+                <div className="sticker">
+                中文 | English
+                </div>
+                </a>
+                {/* <Sticker onClick={changeLang} /> */}
+                <Footer />
+            </div>             
+            : 
+            <div>
+                <h1>Hi this is English website XD</h1>
+                <a onClick={changeLang}>
+                <div className="sticker">
+                中文 | English
+                </div>
+                </a>
             </div>
-        )
-    }
-
-
-    return(
-        <div>
-        {website}
-        </div>
+            }</div>
+        
     );
+
 
     
 }
