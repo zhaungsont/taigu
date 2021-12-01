@@ -24,7 +24,7 @@ function App(){
             </div>             
             : 
             <div>
-                <Header slogan="Professional pepsi appreciator"/>
+                <Header slogan="Professional Art Restoration"/>
                 <TitleLinks day="EN" />
                 <Content cont="EN" />
 
