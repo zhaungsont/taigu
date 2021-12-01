@@ -16,25 +16,19 @@ function App(){
     return(<div>
         {lang ?
             <div>
-                <Header/>
-                <TitleLinks />
-                <Content />
-                <a onClick={changeLang}>
-                <div className="sticker">
-                中文 | English
-                </div>
-                </a>
-                {/* <Sticker onClick={changeLang} /> */}
+                <Header slogan="專 業 字 畫 修 復 裝 裱"/>
+                <TitleLinks day="CH" />
+                <Content cont="CH" />
+                <a onClick={changeLang}><div className="sticker">{lang ? "Eng | 中文" : "中文 | Eng" }</div></a>
                 <Footer />
             </div>             
             : 
             <div>
-                <h1>Hi this is English website XD</h1>
-                <a onClick={changeLang}>
-                <div className="sticker">
-                中文 | English
-                </div>
-                </a>
+                <Header slogan="Professional pepsi appreciator"/>
+                <TitleLinks day="EN" />
+                <Content cont="EN" />
+
+                <a onClick={changeLang}><div className="sticker">{lang ? "Eng | 中文" : "中文 | Eng"}</div></a>
             </div>
             }</div>
         

@@ -9,7 +9,8 @@ import Sakana from "./Sakana";
 import Attributes from "./Attributes";
 
 
-function Content(){
+function Content(props){
+
     return(
         <div id="content-section">
 
@@ -17,31 +18,28 @@ function Content(){
         <div className="columns">
 
             <div className="left-pane">            
-                <TitleContent />
+                <TitleContent cont={props.cont} />
 
-                <SecondContent />
+                <SecondContent cont={props.cont} />
 
             </div>
 
             <div className="right-pane">
                 <div className="desktop-spacer"></div>
 
-                <DivName name="聯絡資訊" src="images/phone.png" />
-                <Contact />
+                <DivName name={props.cont == "CH" ? "聯絡資訊" : "Contact"} src="images/phone.png" />
+                <Contact cont={props.cont} />
 
-                <DivName name="營業資訊" src="images/time.png" />
-                <StoreInfo />
+                <DivName name={props.cont == "CH" ? "營業資訊" : "Opening Hours"} src="images/time.png" />
+                <StoreInfo cont={props.cont} />
 
-                <DivName name="Google 地圖" src="images/map.png" />
+                <DivName name={props.cont == "CH" ? "Google 地圖" : "Google Map"} src="images/map.png" />
                 <div className="map-border">
                 <Map />
                 </div>
 
-                <DivName name="網站作者" src="images/teenager.png" />
-                <Sakana />
-
-                {/* <DivName name="致謝" src="images/copyright.png" />
-                <Attributes /> */}
+                <DivName name={props.cont == "CH" ? " 網站作者" : "About the Author"} src="images/teenager.png" />
+                <Sakana cont={props.cont} />
             </div>
         </div>
 

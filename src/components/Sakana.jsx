@@ -1,6 +1,8 @@
 import React from "react";
 
-function Sakana(){
+//props.cont = "EN" or "CH"
+
+function Sakana(props){
     return(
         <div className="sakana sidepane">
             <table>
@@ -10,11 +12,11 @@ function Sakana(){
                     <td><a href="https://github.com/zhaungsont">zhaungsont</a></td>
                 </tr>
                 <tr>
-                    <td className="t1">電玩資訊站</td>
+                    <td className="t1">{props.cont == "CH" ? "電玩資訊站" : "Indie Game News Outlet"}</td>
                     <td><a href="https://www.wasdbeat.com/">BacMuse</a></td>
                 </tr>
                 <tr>
-                    <td className="t1">個人網站</td>
+                    <td className="t1">{props.cont == "CH" ? "個人網站" : "Personal Website"}</td>
                     <td><a className="wordpress" href="https://zhsont.wordpress.com/">WordPress</a></td>
                 </tr>
             </tbody>

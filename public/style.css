@@ -183,6 +183,14 @@ table{
     border-radius: 10px 0 0 10px;
     padding: 0.8em;
     cursor:pointer;
+    right: -3.3em;
+    transition-duration: 0.4s;
+
+}
+
+.sticker:hover{
+    right: 0;
+    /* color: #142F43; */
 
 }
 
@@ -346,6 +354,12 @@ bottom: 0;
 
     /* -------- HEADER SECTION -------- */
     /* -------- CONTENT SECTION -------- */
+
+    .sticker{
+        font-size: 0.85em;
+        top: inherit;
+        bottom: 5em;
+    }
 
     .title-links{
         width: 92%;
