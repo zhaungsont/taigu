@@ -27,8 +27,9 @@ function App(){
                 <Header slogan="Professional Art Restoration"/>
                 <TitleLinks day="EN" />
                 <Content cont="EN" />
-
                 <a onClick={changeLang}><div className="sticker">{lang ? "Eng | 中文" : "中文 | Eng"}</div></a>
+                <Footer />
+
             </div>
             }</div>
         
