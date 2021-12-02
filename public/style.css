@@ -11,6 +11,14 @@ html, body {
     font-weight: 500;
 }
 
+.EN1{ /* English Version */
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.EN2{ /* English Version */
+    font-family: 'Nanum Myeongjo', serif;
+}
+
 button{
     /* Make it behaves like URL */
     cursor:pointer; 
@@ -357,8 +365,7 @@ bottom: 0;
 
     .sticker{
         font-size: 0.85em;
-        top: inherit;
-        bottom: 5em;
+        top: 25%;
     }
 
     .title-links{

@@ -16,7 +16,7 @@ function App(){
     return(<div>
         {lang ?
             <div>
-                <Header slogan="專 業 字 畫 修 復 裝 裱"/>
+                <Header slogan="CH"/>
                 <TitleLinks day="CH" />
                 <Content cont="CH" />
                 <a onClick={changeLang}><div className="sticker">{lang ? "Eng | 中文" : "中文 | Eng" }</div></a>
@@ -24,7 +24,7 @@ function App(){
             </div>             
             : 
             <div>
-                <Header slogan="Professional Art Restoration"/>
+                <Header slogan="EN"/>
                 <TitleLinks day="EN" />
                 <Content cont="EN" />
                 <a onClick={changeLang}><div className="sticker">{lang ? "Eng | 中文" : "中文 | Eng"}</div></a>
