@@ -129,6 +129,10 @@ a:hover{
     border-radius: 0 0 10px 10px;
 }
 
+.firstContent{
+    text-align: justify;
+}
+
 
 .contact{
     
@@ -186,13 +190,17 @@ table{
     position: fixed;
     top: 10em;
     right: 0;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.75);
     /* background-color: #B4C6A6; */
     border-radius: 10px 0 0 10px;
     padding: 0.8em;
     cursor:pointer;
     right: -3.3em;
     transition-duration: 0.4s;
+
+    backdrop-filter: blur(5px);
+
+    /* backdrop-filter: opacity(10%); */
 
 }
 
