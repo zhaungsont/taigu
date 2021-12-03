@@ -197,7 +197,7 @@ table{
     cursor:pointer;
     right: -3.3em;
     transition-duration: 0.4s;
-
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 
     /* backdrop-filter: opacity(10%); */
